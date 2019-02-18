@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+	<section class="wrapper d-flex align-items-baseline align-items-sm-stretch flex-wrap">
+		<div class="sidebar col-12 col-md-5 col-lg-5 col-xl-3 d-flex flex-column flex-wrap">
+			<div class="sidebar__pin">
+		
+				<div class="logo__container d-flex flex-column align-items-center">
+					<a href="/" class="logo text-center mb-4"><span class="icon logo"></span></a>
+					<div class="checkbox__site mb-4">
+						<span class="avia active">Авиа</span><span class="hotels active">Отели</span>
+					</div>
+				</div>
+		
+				<form action="#" class="d-flex flex-wrap justify-content-between" id="booking__form">
+					<input type="text" name="" placeholder="Россия, Москва" class="w-100">
+		
+					<input type="text" name="" placeholder="Дата заезда" class="arrival__date datedropper" data-max-year="2050"
+					 data-min-year="2000" data-lang="ru" data-large-default="true" data-large-mode="true" data-modal="true">
+		
+					<input type="text" name="" placeholder="Дата выезда" class="departure__date datedropper" data-max-year="2050"
+					 data-min-year="2000" data-lang="ru" data-large-default="true" data-large-mode="true" data-modal="true"
+					 data-roundtrip="my-trip">
+		
+					<input type="text" name="" placeholder="" class="count__guest">
+		
+					<button type="submit">Найти</button>
+				</form>
+		
+		
+				<div class="show__maps mt-4 mb-4 text-center">
+					<a href="#">Показать на карте</a>
+				</div>
+		
+		
+				<div class="filter d-none d-md-flex">
+					<form action="#" id="booking__filter" class="w-100">
+		
+						<div class="filter__container">
+							<h3 class="filter__head">Цена</h3>
+		
+							<div class="filter__item">
+								<input type="radio" name="price" id="1.1">
+								<label for="1.1" class="checkbox"></label>
+								<label for="1.1" class="">Сначала дешевые</label>
+							</div>
+		
+							<div class="filter__item">
+								<input type="radio" name="price" id="1.2">
+								<label for="1.2" class="checkbox"></label>
+								<label for="1.2" class="">Сначала дешевые</label>
+							</div>
+						</div>
+		
+						<div class="filter__container">
+							<h3 class="filter__head">Удобства в отеле</h3>
+		
+							<div class="filter__item">
+								<input type="radio" name="facilities__in__hotels" id="2.1">
+								<label for="2.1" class="checkbox"></label>
+								<label for="2.1" class="">Бассейн</label>
+							</div>
+		
+							<div class="filter__item">
+								<input type="radio" name="facilities__in__hotels" id="2.2">
+								<label for="2.2" class="checkbox"></label>
+								<label for="2.2" class="">Номера для курящих </label>
+							</div>
+							<div class="filter__item">
+								<input type="radio" name="facilities__in__hotels" id="2.3">
+								<label for="2.3" class="checkbox"></label>
+								<label for="2.3" class="">С животными</label>
+							</div>
+							<div class="filter__item">
+								<input type="radio" name="facilities__in__hotels" id="2.4">
+								<label for="2.4" class="checkbox"></label>
+								<label for="2.4" class="">Парковка</label>
+							</div>
+						</div>
+		
+						<div class="filter__container">
+							<h3 class="filter__head">Удобства в номере</h3>
+		
+							<div class="filter__item">
+								<input type="radio" name="facilities__in__room" id="3.1">
+								<label for="3.1" class="checkbox"></label>
+								<label for="3.1" class="">Wi - fi в комнатах</label>
+							</div>
+		
+							<div class="filter__item">
+								<input type="radio" name="facilities__in__room" id="3.2">
+								<label for="3.2" class="checkbox"></label>
+								<label for="3.2" class="">Кондиционер</label>
+							</div>
+							<div class="filter__item">
+								<input type="radio" name="facilities__in__room" id="3.3">
+								<label for="3.3" class="checkbox"></label>
+								<label for="3.3" class="">Общая ванная/label>
+							</div>
+							<div class="filter__item">
+								<input type="radio" name="facilities__in__room" id="3.4">
+								<label for="3.4" class="checkbox"></label>
+								<label for="3.4" class="">Телевизор</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+		<main class="main col-12 col-md-7 col-lg-7 col-xl-9">
+		
+			<header>
+				<div class="container">
+					<div class="row justify-content-between align-items-center">
+						<div class="logo d-flex d-md-none"><a href="#"><span class="icon logo"></span></a></div>
+						<div class="header__contacts">
+							<a href="tel:8 800 100-10-77">8 800 100-10-77</a>
+							<a href="mailto:info@aeroport.ru" class="d-none d-md-inline-block">info@aeroport.ru</a>
+						</div>
+						<div class="download__app d-none d-md-flex align-items-center">
+							<a href="#"><span class="icon apple_gray"></span></a>
+							<a href="#"><span class="icon androin_gray"></span></a>
+							<span>Скачайте наше приложение</span>
+						</div>
+						<div class="login">
+							<a href="#">Войти</a>
+						</div>
+					</div>
+				</div>
+			</header>
+		
+			<div class="map__container">
+				<iframe src="https://yandex.ru/map-widget/v1/-/C0svner" width="100%" height="100%" frameborder="0" allowfullscreen="true"
+				 class="map"></iframe>
+			</div>
+		
+			<div class="hotels__wrapper col-12 col-xl-10">
+				<div class="hotels">
+			
+					<div class="hotel d-flex flex-column flex-lg-row align-content-center flex-wrap">
+			
+						<div class="hotel__gallery col-12 col-lg-5 col-xl-4">
+							<div class="owl-carousel owl-theme">
+								<a data-fancybox="gallery" href="img/119531343.jpg">
+									<img class="owl-lazy" data-src="img/119531343.jpg" alt="">
+								</a>
+								<a data-fancybox="gallery" href="img/119530643.jpg">
+									<img class="owl-lazy" data-src="img/119530643.jpg" alt="">
+								</a>
+								<a data-fancybox="gallery" href="img/119531472.jpg">
+									<img class="owl-lazy" data-src="img/119531472.jpg" alt="">
+								</a>
+								<a data-fancybox="gallery" href="img/122990429.jpg">
+									<img class="owl-lazy" data-src="img/122990429.jpg" alt="">
+								</a>
+								<a data-fancybox="gallery" href="img/119531316.jpg">
+									<img class="owl-lazy" data-src="img/119531316.jpg" alt="">
+								</a>
+							</div>
+						</div>
+			
+						<div class="hotel__info col-12 col-lg-7 col-xl-8">
+			
+							<div class="hotel__head d-flex align-items-center justify-content-between">
+								<div class="hotel__title">
+									<a href="#">Отель лорд</a>
+								</div>
+								<div class="count__star">
+									<div class="rating" data-rate-value=2.5></div>
+								</div>
+							</div>
+			
+							<div class="hotel__room__info">
+			
+								<div class="hotel__room__address d-flex align-items-center justify-content-between flex-wrap">
+									<address class="w-75">
+										Улица Николоямская, д.38/23, стр. 1, Москва
+										2,5 км от центра Москвы
+									</address>
+									<button type="button" class="button__arrow-down show__address"><span class="icon arrow-down"></span></button>
+								</div>
+			
+								<div class="hotel__facilities__wrap d-flex align-items-center justify-content-between flex-wrap">
+			
+									<div class="hotel__facilities w-75 d-flex align-content-center justify-content-between flex-wrap">
+										<span class="hotel__facilities__item">Двухместный полулюкс</span>
+										<span class="hotel__facilities__item">Двухместный полулюкс</span>
+										<span class="hotel__facilities__item">Двухместный полулюкс</span>
+									</div>
+			
+									<button type="button" class="button__arrow-down"><span class="icon arrow-down"></span></button>
+								</div>
+			
+								<div class="hotel__room__price d-flex justify-content-between align-items-center">
+									<span class="guests">
+										За ночь для <br>
+										<span class="guests__count">4</span> гостей
+									</span>
+			
+									<div class="sum d-flex justify-content-between align-items-center">
+										<span class="sum__price">7500р</span>
+										<button class="price__one__night">3590</button>
+									</div>
+								</div>
+							</div>
+			
+						</div>
+			
+			
+						<div class="hotel__additional__information col-12">
+							<div class='tabs hotel__desciption'>
+								<ul class="tabs__link d-flex align-items-center flex-wrap">
+									<li><a href="#pupular__amenities">Удобства</a></li>
+									<li><a href="#address__and__map">Расположение</a></li>
+									<li><a href="#gallery">Галерея</a></li>
+									<button type="button" class="hotel__desciption__closebtn"><span class="icon close-button"></span></button>
+								</ul>
+			
+								<div id='pupular__amenities' class="tabs__content">
+									<h4 class="h4 mb-3">
+										Популярные удобства
+									</h4>
+									<div class="popular__amenities d-flex flex-wrap align-items-center justify-content-between">
+										<div class="amenities__item d-flex flex-wrap align-items-center">
+											<span class="icon calendar mr-2"></span>
+											Wi-fi
+										</div>
+									</div>
+			
+			
+			
+									<div class="all__facilities__wrapper d-flex flex-wrap justify-content-between">
+										<h4 class="h4 w-100">Все удобства</h4>
+										<ul class="all__facilities">
+											<p class="font-weight-bold">Оснащение отеля</p>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+										</ul>
+										<ul class="all__facilities">
+											<p class="font-weight-bold">Оснащение номера</p>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+											<li>Администрация 24 часа</li>
+										</ul>
+										<div class="div">
+											<ul class="all__facilities">
+												<p class="font-weight-bold">Доступность для инвалидов</p>
+												<li>Администрация 24 часа</li>
+												<li>Администрация 24 часа</li>
+											</ul>
+											<ul class="all__facilities">
+												<p class="font-weight-bold">Оснащение номера</p>
+												<li>Администрация 24 часа</li>
+												<li>Администрация 24 часа</li>
+											</ul>
+										</div>
+									</div>
+			
+								</div>
+			
+								<div id='address__and__map' class="tabs__content">
+									<iframe src="https://yandex.ru/map-widget/v1/-/C8WTEla" width="100%" height="300" frameborder="0" allowfullscreen="true"></iframe>
+								</div>
+			
+								<div id='gallery' class="tabs__content">
+									<h1>
+										Содержимое 3
+									</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+			
+			
+			
+			
+			
+				</div>
+			
+			</div>
+		
+		</main>
+		<footer class="w-100">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="contacts">
+						<h5 class="footer__head">Контакты</h5>
+						<h4 class="h4">
+							<a href="tel:8 800 100-10-77">8 800 100-10-77</a>
+						</h4>
+						<h4 class="h4">
+							<a href="mailto:info@aeroport.ru">info@aeroport.ru</a>
+						</h4>
+					</div>
+					<div class="contacts">
+		
+						<div class="contacts">
+		
+						</div>
+						<div class="contacts d-flex flex-wrap align-items-center">
+							<a href="#" class="mr-2"><span class="icon apple_gray"></span></a>
+							<a href="#" class="mr-2"><span class="icon androin_gray"></span></a>
+							<span>Cкачайте наше <br>
+								приложение</span>
+						</div>
+		
+						<div class="footer__menu w-100 d-flex mt-4 mb-4 flex-wrap">
+							<a href="#">КОМПАНИЯ</a>
+							<a href="#">ПЕРСОНАЛ</a>
+							<a href="#">РУКОВОДСТВО</a>
+							<a href="#">ПРЕДЛОЖЕНИЯ</a>
+							<a href="#">ВОПРОСЫ</a>
+						</div>
+					</div>
+				</div>
+		</footer>
+	</section>
+
+
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+
+	<!-- <script src="js/lib/jquery.fancybox.min.js"></script>
+	<script src="js/lib/jquery.tabslet.min.js"></script>
+	<script src="js/lib/owl.carousel.min.js"></script>
+	<script src="js/lib/rater.min.js"></script>
+	<script src="js/lib/datedropper.min.js"></script>
+	<script src="js/lib/jquery.pin.js"></script>
+	<script src="js/lib/bootstrap.min.js"></script> -->
+
+	<script src="js/app.js"></script>
+
+
+	<script>
+		$('.show__address').on('click', function () {
+			let hotel = $(this).closest('.hotel');
+			$(hotel).find('.hotel__desciption').toggleClass('hotel__desciption--show');
+			$(hotel).find('.tabs__link li').removeClass('active');
+			$(hotel).find('.tabs__link li:nth-child(2)').addClass('active');
+			$(hotel).find('.hotel__desciption > div').css("display", "none");
+			$(hotel).find('#address__and__map').css("display", "block");
+
+			// $(".sidebar__pin").pin({
+			// 	containerSelector: ".sidebar",
+			// 	minWidth: 940,
+			// 	padding: { top: 30, bottom: 50 }
+			// });
+		});
+
+
+		$('.hotel__desciption__closebtn').on('click', function () {
+			$(this).closest('.hotel__desciption').toggleClass('hotel__desciption--show');
+		});
+
+
+	</script>
+
+
+	<script>
+		$('.datedropper').dateDropper({
+		});
+
+		$('.owl-carousel').owlCarousel({
+			items: 1,
+			lazyLoad: true,
+			loop: true,
+			margin: 0,
+			nav: true,
+			dots: false,
+			navText: ['<span class="icon left-arrow"></span>', '<span class="icon right-arrow"></span>']
+		});
+
+
+		$('[data-fancybox="gallery"]').fancybox({
+			loop: true,
+			thumbs: {
+				autoStart: false,
+			},
+			buttons: [
+				"zoom",
+				"share",
+				"slideShow",
+				"fullScreen",
+				"download",
+				"thumbs",
+				"close"
+			],
+			infobar: true,
+		});
+
+		$(document).ready(function () {
+			$('.tabs').tabslet({
+				animation: true
+			});
+		});
+
+		//or for example
+
+		$(".rating").rate({
+			selected_symbol_type: 'utf8_star', // Must be a key from symbols
+			cursor: 'default',
+			convert_to_utf8: false,
+			readonly: true,
+			change_once: false, // Determines if the rating can only be set once
+			// ajax_method: 'POST',
+			// url: 'http://localhost/test.php',
+			// additional_data: {} // Additional data to send to the server
+		});
+
+
+		$(".sidebar__pin").pin({
+			containerSelector: ".sidebar",
+			minWidth: 940,
+			padding: { top: 30, bottom: 50 }
+		});
+
+	</script>
+</body>
+
+
+
+</html>
