@@ -154,7 +154,7 @@ animateIn:!1},e.prototype.swap=function(){if(1===this.core.settings.items&&a.sup
         recalculateLimits();
 
         $(window).on('load', update);
-        $window.load();
+        // $window.load();
 
         return this;
     };

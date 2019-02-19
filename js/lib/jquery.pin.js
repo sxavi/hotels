@@ -90,7 +90,7 @@
         recalculateLimits();
 
         $(window).on('load', update);
-        $window.load();
+        // $window.load();
 
         return this;
     };
